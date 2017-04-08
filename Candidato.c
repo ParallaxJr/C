@@ -2,11 +2,11 @@
 #include <locale.h>
 
 void menu(){
-	printf("___________ELEI«√O DEV__________\n");
+	printf("___________ELEI√á√ÉO DEV__________\n");
 	printf("Digite 1 - Candidato A\n");
 	printf("Digite 2 - Candidato B\n");
 	printf("Digite 3 - Candidato C\n");
-	printf("Digite 4 para Analisar os votos j· computados\n");
+	printf("Digite 4 para Analisar os votos j√° computados\n");
 	printf("Anular Voto - Digite 0\n");
 }
 
@@ -15,7 +15,7 @@ main(){
 	int voto = 0, escolha;
 	FILE *candA, *candB, *candC,*nulo;
 	menu();
-	printf("\nFaÁa a sua escolha: ");
+	printf("\nFa√ßa a sua escolha: ");
 	scanf("%d",&escolha);
 	do{
 		if(escolha == 1){
@@ -37,6 +37,5 @@ main(){
 		printf("Voto Anulado!!");
 		nulo=fopen("VotosNulos.txt","w");
 		fprintf(nulo,"%d",voto);
-		nulo = nulo + 1;
 		fclose(nulo);
 }
